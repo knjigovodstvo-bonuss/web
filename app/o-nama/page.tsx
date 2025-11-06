@@ -11,6 +11,12 @@ export default function AboutPage() {
         <li>Jasna komunikacija</li>
         <li>Digitalna razmjena dokumenata</li>
       </ul>
+      <h2>Podaci o poslovanju</h2>
+      <ul>
+        <li><strong>Naziv:</strong> Bonuss, obrt za knjigovodstvene usluge</li>
+        <li><strong>Adresa:</strong> Dubrovačka 59, 21000 Split, Hrvatska</li>
+        <li><strong>Telefon:</strong> <a href="tel:+385977444456">+385 97 744 44 56</a></li>
+      </ul>
     </section>
   );
 }
