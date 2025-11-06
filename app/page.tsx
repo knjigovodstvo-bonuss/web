@@ -5,10 +5,15 @@ export default function HomePage() {
     <section className="container py-20">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p className="uppercase text-xs tracking-[0.3em] text-brand-300 mb-4">Bonuss</p>
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-white">
-            Knjigovodstvo za poduzetnike koji žele miran san.
+          <h1 className="text-5xl md:text-[96px] font-black tracking-tight text-brand-500 mb-6 leading-none drop-shadow-[0_10px_30px_rgba(245,97,17,0.45)]">
+            BONUSS
           </h1>
+          <p className="uppercase text-xs tracking-[0.3em] text-slate-500 mb-6">
+            Obrt za knjigovodstvene usluge
+          </p>
+          <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white">
+            Knjigovodstvo za poduzetnike koji žele miran san.
+          </h2>
           <p className="mt-5 text-lg text-slate-300 max-w-xl">
             Pouzdano vođenje poslovnih knjiga, PDV, plaće i savjetovanje. Transparentno, pristupačno, na vrijeme.
           </p>
