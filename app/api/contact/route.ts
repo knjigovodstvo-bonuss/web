@@ -9,7 +9,11 @@ const Schema = z.object({
   email: z.string().email(),
   phone: z.string().optional(),
   message: z.string().min(10),
-  consent: z.literal(true),
+  consent: z
+    .boolean()
+    .refine((val) => val === true, {
+      message: "Molimo potvrdite suglasnost s obradom podataka.",
+    }),
   company: z.string().max(0).optional(), // honeypot: must be empty
 });
 
@@ -73,7 +77,7 @@ export async function POST(req: Request) {
 	await resend.emails.send({
 	  from: "Bonuss Website <onboarding@resend.dev>",
 	  to: "knjigovodstvobonuss@gmail.com",
-	  reply_to: data.email,
+	  replyTo: data.email,
 	  subject: "Nova poruka s Bonuss weba",
 	  text: `Ime: ${data.name}\nE-mail: ${data.email}\nTelefon: ${data.phone ?? "-"}\n\nPoruka:\n${data.message}`,
 	  html: htmlEmail(data),

@@ -15,11 +15,11 @@ const Schema = z.object({
     .transform((v) => (v ?? "").trim())
     .pipe(z.string().max(40, "Predugačak broj").optional()),
   message: z.string().min(10, "Poruka je prekratka"),
-  consent: z.literal(true, {
-    errorMap: () => ({
+  consent: z
+    .boolean()
+    .refine((val) => val === true, {
       message: "Molimo potvrdite suglasnost s obradom podataka.",
     }),
-  }),
   company: z.string().max(0).optional(), // honeypot field
 });
 
