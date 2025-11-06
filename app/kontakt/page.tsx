@@ -104,8 +104,8 @@ export default function ContactPage() {
   // ---- Render ----
   return (
     <section className="container py-16 max-w-2xl">
-      <h1 className="text-3xl font-semibold">Kontakt</h1>
-      <p className="mt-2 text-gray-600">
+      <h1 className="text-3xl font-semibold text-white">Kontakt</h1>
+      <p className="mt-2 text-slate-300">
         Pošaljite upit i javit ćemo se isti dan. Polja označena * su obavezna.
       </p>
 
@@ -129,13 +129,13 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label htmlFor="name" className="block text-sm mb-1">
+          <label htmlFor="name" className="block text-sm mb-1 text-slate-200">
             Ime i prezime *
           </label>
           <input
             id="name"
             autoComplete="name"
-            className="w-full border rounded-xl px-3 py-2"
+            className="w-full border border-white/10 rounded-xl px-3 py-2 bg-surface-900/40 text-white placeholder:text-slate-500 focus:border-brand-400 outline-none transition"
             aria-invalid={!!errors.name}
             aria-describedby={errors.name ? "name-error" : undefined}
             {...register("name")}
@@ -148,7 +148,7 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm mb-1">
+          <label htmlFor="email" className="block text-sm mb-1 text-slate-200">
             E-mail *
           </label>
           <input
@@ -156,7 +156,7 @@ export default function ContactPage() {
             type="email"
             inputMode="email"
             autoComplete="email"
-            className="w-full border rounded-xl px-3 py-2"
+            className="w-full border border-white/10 rounded-xl px-3 py-2 bg-surface-900/40 text-white placeholder:text-slate-500 focus:border-brand-400 outline-none transition"
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? "email-error" : undefined}
             {...register("email")}
@@ -169,7 +169,7 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label htmlFor="phone" className="block text-sm mb-1">
+          <label htmlFor="phone" className="block text-sm mb-1 text-slate-200">
             Telefon (neobavezno)
           </label>
           <input
@@ -177,7 +177,7 @@ export default function ContactPage() {
             type="tel"
             inputMode="tel"
             autoComplete="tel"
-            className="w-full border rounded-xl px-3 py-2"
+            className="w-full border border-white/10 rounded-xl px-3 py-2 bg-surface-900/40 text-white placeholder:text-slate-500 focus:border-brand-400 outline-none transition"
             {...register("phone")}
           />
           {errors.phone && (
@@ -186,13 +186,13 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm mb-1">
+          <label htmlFor="message" className="block text-sm mb-1 text-slate-200">
             Poruka *
           </label>
           <textarea
             id="message"
             rows={5}
-            className="w-full border rounded-xl px-3 py-2"
+            className="w-full border border-white/10 rounded-xl px-3 py-2 bg-surface-900/40 text-white placeholder:text-slate-500 focus:border-brand-400 outline-none transition"
             aria-invalid={!!errors.message}
             aria-describedby={errors.message ? "message-error" : undefined}
             {...register("message")}
@@ -208,13 +208,13 @@ export default function ContactPage() {
           <input
             id="consent"
             type="checkbox"
-            className="mt-1 h-4 w-4"
+            className="mt-1 h-4 w-4 accent-brand-500 bg-surface-900 border border-white/20 rounded"
             {...register("consent")}
           />
-          <label htmlFor="consent" className="text-sm text-gray-700">
+          <label htmlFor="consent" className="text-sm text-slate-300">
             Dajem suglasnost da se moji podaci koriste za odgovor na upit,
             sukladno{" "}
-            <a className="underline" href="/privatnost">
+            <a className="underline text-brand-300 hover:text-brand-200" href="/privatnost">
               Pravilima privatnosti
             </a>
             . *
@@ -228,20 +228,20 @@ export default function ContactPage() {
 
         <button
           disabled={isSubmitting}
-          className="px-5 py-3 rounded-xl bg-brand-600 text-white hover:bg-brand-700 disabled:opacity-60"
+          className="px-5 py-3 rounded-xl bg-brand-500 text-white hover:bg-brand-400 disabled:opacity-60 transition shadow-lg shadow-brand-500/20"
         >
           {isSubmitting ? "Šaljem..." : "Pošalji poruku"}
         </button>
 
-        {serverOK && <p className="text-green-700">Hvala! Uskoro se javljamo.</p>}
-        {serverError && <p className="text-red-700">{serverError}</p>}
+        {serverOK && <p className="text-brand-200">Hvala! Uskoro se javljamo.</p>}
+        {serverError && <p className="text-red-400">{serverError}</p>}
       </form>
 
-      <p className="text-xs text-gray-500 mt-6">
+      <p className="text-xs text-slate-400 mt-6">
         Ovu formu štitimo jednostavnim antispamom (honeypot). Za brži kontakt
         pišite na{" "}
         <a
-          className="underline"
+          className="underline text-brand-300 hover:text-brand-200"
           href="mailto:knjigovodstvobonuss@gmail.com"
         >
           knjigovodstvobonuss@gmail.com

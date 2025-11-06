@@ -2,7 +2,7 @@ export const metadata = { title: "O nama — Bonuss" };
 
 export default function AboutPage() {
   return (
-    <section className="container py-16 prose">
+    <section className="container py-16 prose prose-invert">
       <h1>O nama</h1>
       <p>Bonuss je malo, posvećeno knjigovodstvo fokusirano na obrtnike, j.d.o.o. i d.o.o. Radimo transparentno i bez skrivenih troškova.</p>
       <h2>Zašto Bonuss?</h2>

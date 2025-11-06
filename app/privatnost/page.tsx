@@ -2,7 +2,7 @@ export const metadata = { title: "Privatnost — Bonuss" };
 
 export default function PrivacyPage() {
   return (
-    <section className="container py-16 prose">
+    <section className="container py-16 prose prose-invert">
       <h1>Pravila privatnosti</h1>
       <p>Ova stranica opisuje kako prikupljamo i obrađujemo podatke pristigle putem kontakt forme.</p>
       <h2>Podaci koje prikupljamo</h2>
