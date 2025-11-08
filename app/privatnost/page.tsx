@@ -57,10 +57,10 @@ export default function PrivacyPage() {
         <p className="text-slate-200">
           U svakom trenutku možete zatražiti pregled, ispravak ili brisanje podataka. Pišite nam na{" "}
           <a
-            href="mailto:knjigovodstvobonuss@gmail.com"
+            href="mailto:knjigovodstvo.bonus@gmail.com"
             className="text-brand-200 underline hover:text-brand-100 transition"
           >
-            knjigovodstvobonuss@gmail.com
+            knjigovodstvo.bonus@gmail.com
           </a>
           .
         </p>
