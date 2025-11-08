@@ -11,7 +11,7 @@ export default function AboutPage() {
     { label: "Naziv", value: "Bonuss, obrt za knjigovodstvene usluge" },
     { label: "Adresa", value: "Dubrovačka 59, 21000 Split, Hrvatska" },
     { label: "Telefon", value: "+385 97 744 44 56", href: "tel:+385977444456" },
-    { label: "E-mail", value: "knjigovodstvobonuss@gmail.com", href: "mailto:knjigovodstvobonuss@gmail.com" },
+    { label: "E-mail", value: "knjigovodstvo.bonus@gmail.com", href: "mailto:knjigovodstvo.bonus@gmail.com" },
   ];
 
   return (
