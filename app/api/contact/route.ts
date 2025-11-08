@@ -75,8 +75,8 @@ export async function POST(req: Request) {
 
   try {
 	await resend.emails.send({
-	  from: "Bonuss Website <onboarding@resend.dev>",
-	  to: "knjigovodstvobonuss@gmail.com",
+	  from: "Bonuss Website <noreply@knjigovodstvobonuss.hr>",
+	  to: "knjigovodstvo.bonus@gmail.com",
 	  replyTo: data.email,
 	  subject: "Nova poruka s Bonuss weba",
 	  text: `Ime: ${data.name}\nE-mail: ${data.email}\nTelefon: ${data.phone ?? "-"}\n\nPoruka:\n${data.message}`,
