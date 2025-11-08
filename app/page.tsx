@@ -17,18 +17,12 @@ export default function HomePage() {
           <p className="mt-5 text-lg text-slate-300 max-w-xl">
             Pouzdano vođenje poslovnih knjiga, PDV, plaće i savjetovanje. Transparentno, pristupačno, na vrijeme.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10">
             <Link
               href="/kontakt"
-              className="px-6 py-3 rounded-xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 transition hover:bg-brand-400"
+              className="px-6 py-3 rounded-xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 transition hover:bg-brand-400 inline-block"
             >
               Zatraži ponudu
-            </Link>
-            <Link
-              href="/cjenik"
-              className="px-6 py-3 rounded-xl border border-white/20 text-slate-100 transition hover:border-brand-400 hover:text-brand-200"
-            >
-              Pogledaj cjenik
             </Link>
           </div>
           <ul className="mt-10 grid md:grid-cols-3 gap-4 text-sm text-slate-300">

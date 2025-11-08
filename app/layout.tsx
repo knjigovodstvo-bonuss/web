@@ -16,7 +16,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="font-semibold text-brand-400 tracking-wide">Bonuss</Link>
             <ul className="flex gap-6 text-sm text-slate-200">
               <li><Link href="/o-nama" className="hover:text-brand-300 transition-colors">O nama</Link></li>
-              <li><Link href="/cjenik" className="hover:text-brand-300 transition-colors">Cjenik</Link></li>
               <li><Link href="/kontakt" className="hover:text-brand-300 transition-colors">Kontakt</Link></li>
               <li><Link href="/privatnost" className="hover:text-brand-300 transition-colors">Privatnost</Link></li>
             </ul>
